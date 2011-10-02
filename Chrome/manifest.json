@@ -1,16 +1,15 @@
 {
-  "name": "Add Blocker",
-  "version": "1.2.4",
-  "description": "Add Blocker ensures that your Google Plus notifications only increment when something interesting happens, like someone comments on a post, or sends you a message. No longer will you be notified by that harsh red '1' when some stranger from the internet adds you to a circle! This only applies to gmail, so far. Built by @SaraJChipps, icons by @Lloyd.",
-  "background_page": "background.html",
-  "content_scripts": [ 
-    	{
-    	  "js": ["js/addblocker.js"],
-    	  "matches": [  "*.google.*" ],
-    	  "run_at" : "document_end",
-    	  "all_frames": true
-      }],
-  "permissions": [
-     "*.google.*"
-  ]
+	"name": "Add Blocker",
+	"version": "1.2.5",
+	"description": "Add Blocker ensures that your Google Plus notifications only increment when something interesting happens, like someone comments on a post, or sends you a message. No longer will you be notified by that harsh red '1' when some stranger from the internet adds you to a circle! This only applies to gmail, so far. Built by @SaraJChipps, icons by @Lloyd.",
+	"background_page": "background.html",
+	"content_scripts": [{
+		"js": ["js/addblocker.js"],
+		"matches": [ "<all_urls>" ],
+		"run_at" : "document_end",
+		"all_frames": true
+	}],
+	"permissions": [
+		"https://*.google.*", "http://*.google.*"
+	]
 }
