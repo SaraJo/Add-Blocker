@@ -1,16 +1,16 @@
 {
   "name": "Add Blocker",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "get the annoying out of your inbox",
   "background_page": "background.html",
   "content_scripts": [ 
     	{
     	  "js": ["js/addblocker.js"],
-    	  "matches": [  "*.google.*" ],
+    	  "matches": [ "<all_urls>" ],
     	  "run_at" : "document_end",
     	  "all_frames": true
       }],
   "permissions": [
-     "*.google.*"
+"https://*.google.*", "http://*.google.*"
   ]
 }
