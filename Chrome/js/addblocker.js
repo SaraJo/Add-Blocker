@@ -34,7 +34,6 @@ $(function() {
 
 addblocker.checkStatuses = function(statuses){
 	addblocker.number_notifications = 0;
-	//console.log("here are the original number of notifications", statuses);
 	for(i =0; i<statuses.length; i++){
 		if(statuses[i].unread){
 			addblocker.number_notifications++;
@@ -50,7 +49,6 @@ addblocker.checkStatuses = function(statuses){
 
 addblocker.updateAlert = function(){
 	var frame = addblocker.findCanvasFrame();
-	console.log("number of notifications: ", addblocker.number_notifications);
 	$("#gbi1", frame).text(addblocker.number_notifications);	
     if(addblocker.number_notifications == 0)
 	{
