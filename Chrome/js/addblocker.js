@@ -53,14 +53,15 @@ addblocker.checkStatuses = function(statuses){
 addblocker.updateAlert = function(){
 	var frame = addblocker.findCanvasFrame();
 	console.log("number of notifications: ", addblocker.number_notifications);
-	$("#gbi1", frame).text(addblocker.number_notifications);	
     if(addblocker.number_notifications == 0)
 	{
-		$("#gbi1a", frame).css("background", "").css("background-position", "").css("background-color", "#708090");
+		$("#gbi1a", frame).attr("style", "background:url(http://www.elizabethandclarke.com/style/images/Gray.jpg);");
  	}
 	else{
-		$("#gbi1a", frame).css("background", "").css("background-position", "").css("background-color", "red");
+		$("#gbi1a", frame).attr("style", "background:url(http://www.elizabethandclarke.com/style/images/Red.jpg);");
 	}
+	$("#gbi1", frame).text(addblocker.number_notifications);	
+	
 }
 
 
