@@ -1,6 +1,6 @@
 {
   "name": "Add Blocker",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "description": "get the annoying out of your inbox",
   "background_page": "background.html",
   "icons": { "16": "icon-16.jpg",
